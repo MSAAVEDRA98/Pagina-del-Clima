@@ -1,0 +1,57 @@
+@mixin contenedor {
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    @include contenedor();
+    margin-top: 10px;
+}
+.contenedorTarjeta{
+    @include contenedor();
+    // margin-top: 50px;
+    img{
+        padding: 10px 25%;
+    }
+    // background-color: rgb(77, 219, 230);
+}
+.tarjeta{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    img{
+        max-width: 100%;
+    }
+}
+.dayCard{
+    margin: 10px 10px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    img{
+        max-width: 50%;
+    }
+}
+.contenedor_CardDay{
+    display: flex;
+    justify-content: center;
+}
+.datosClima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorElementos{
+    display: flex;
+    justify-content: center;
+}
+.contenedorDatosClima{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
